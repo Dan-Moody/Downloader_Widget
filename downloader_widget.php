@@ -4,7 +4,7 @@
 
 Plugin Name: Downloader Widget
 
-Plugin URI: 
+Plugin URI: https://github.com/Dan-Moody/Downloader_Widget.git
 
 Description: Lets you add download links to the widget space
 

@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
        var $button = $(this);
   
   
-       // Create the media frame.
+       // Create the media frame on admin page
        var file_frame = wp.media.frames.file_frame = wp.media({
           title: 'Select or upload file',
           library: { // remove these to show all
