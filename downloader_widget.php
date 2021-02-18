@@ -97,7 +97,7 @@ class downloader_widget extends WP_Widget {
         wp_enqueue_media();
         wp_enqueue_script('our_admin', '/wp-content/plugins/downloader_widget/our_admin.js', array('jquery'));
     }
-    // Class wpb_widget ends here
+    // Class wpb_widget ends here 
 } 
      
      
