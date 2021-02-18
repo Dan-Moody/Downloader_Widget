@@ -44,26 +44,33 @@ class downloader_widget extends WP_Widget {
     }
       
     // Creating widget front-end
-      
     public function widget( $args, $instance ) {
         // Our variables from the widget settings
-        $title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Default title', 'text_domain' ) : $instance['title'] );
-        $file = ! empty( $instance['file'] ) ? $instance['file'] : '';
+        $title = apply_filters( 'widget_title', empty( $instance['title'] ) ? __( 'Default title', 'text_domain' ) : $instance['title'] ); // Uses default title if widget title not found
+        $file = ! empty( $instance['file'] ) ? $instance['file'] : ''; // If the file exists use it if not then empty string
         
-        ob_start();
+        ob_start(); // Starts buffer
         echo $args['before_widget'];
+
+        // If there is a title echo it in between before title and after title
         if ( ! empty( $instance['title'] ) ) {
             echo $args['before_title'] . $title . $args['after_title'];
         }
         ?>
         
         <?php if($file): ?>
-            <img src="<?php echo esc_url($file); ?>" alt="">
+            <!-- html for displaying the content if the file exists -->
+            <!-- Display nothing if it does not exist -->
+            <div class="wp-block-file">
+                <a href="<?php echo esc_url($file); ?>" class="wp-block-file__button" download>
+                Download
+                </a>
+            </div>
         <?php endif; ?>
-        
         <?php
+        // Display after widget formatting
         echo $args['after_widget'];
-        ob_end_flush();
+        ob_end_flush(); // Flushes then destroys the buffer
     }
               
     // Widget Backend 

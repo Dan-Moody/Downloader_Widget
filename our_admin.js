@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
        var $button = $(this);
   
   
-       // Create the media frame on admin page
+       // Create the media frame.
        var file_frame = wp.media.frames.file_frame = wp.media({
           title: 'Select or upload file',
           library: { // remove these to show all
@@ -24,7 +24,10 @@ jQuery(document).ready(function ($) {
           var attachment = file_frame.state().get('selection').first().toJSON();
   
           $button.siblings('input').val(attachment.url);
-  
+          var save_Button = document.getElementById("widget-downloader_widget-2-savewidget");
+          save_Button.disabled = false;
+          save_Button.value = "Save";
+
        });
   
        // Finally, open the modal
