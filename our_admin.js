@@ -4,7 +4,6 @@ jQuery(document).ready(function ($) {
        e.preventDefault();
        var $button = $(this);
   
-      console.log("test")
        // Create the media frame.
        var file_frame = wp.media.frames.file_frame = wp.media({
           title: 'Select or upload file',
