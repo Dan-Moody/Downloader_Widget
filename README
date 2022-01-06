@@ -11,8 +11,5 @@ Click the add widget button to the menu sidebar and find downloader widget.
 Add it to the sidebar and click on it to change the title and the file location.
 
 They should look the same as the drag and drop ones in the page editor.
-<<<<<<< HEAD
 
 v1.1: Removed javascript to enable save button and instead returned an empty string from the form function
-=======
->>>>>>> e6cdbff4428c5e80e9d1821ac86e6b2d4f8bd710
