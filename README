@@ -2,9 +2,13 @@ This is a WordPress widget to allow WordPress admins to upload or
 select pdf files and then allow clients to download them within the
 widget space
 
-Download the latest zip and add it within the idget page in Wordpress admin pages
+Download the latest zip and add it within the widget page in Wordpress admin pages
 
 The widget will be available in the appearances>widgets tab
+
+Click the add widget button to the menu sidebar and find downloader widget.
+
+Add it to the sidebar and click on it to change the title and the file location.
 
 They should look the same as the drag and drop ones in the page editor.
 
