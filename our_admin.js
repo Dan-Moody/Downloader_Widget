@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
        e.preventDefault();
        var $button = $(this);
   
-  
+      console.log("test")
        // Create the media frame.
        var file_frame = wp.media.frames.file_frame = wp.media({
           title: 'Select or upload file',
@@ -24,9 +24,9 @@ jQuery(document).ready(function ($) {
           var attachment = file_frame.state().get('selection').first().toJSON();
   
           $button.siblings('input').val(attachment.url);
-          var save_Button = document.getElementById("widget-downloader_widget-2-savewidget");
-          save_Button.disabled = false;
-          save_Button.value = "Save";
+         //  var save_Button = document.getElementById("widget-downloader_widget-2-savewidget");
+         //  save_Button.disabled = false;
+         //  save_Button.value = "Save";
 
        });
   

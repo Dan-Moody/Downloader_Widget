@@ -7,3 +7,5 @@ Download the latest zip and add it within the idget page in Wordpress admin page
 The widget will be available in the appearances>widgets tab
 
 They should look the same as the drag and drop ones in the page editor.
+
+v1.1: Removed javascript to enable save button and instead returned an empty string from the form function

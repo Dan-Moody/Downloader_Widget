@@ -8,7 +8,7 @@ Plugin URI: https://github.com/Dan-Moody/Downloader_Widget.git
 
 Description: Lets you add download links to the widget space
 
-Version: 1.0
+Version: 1.1
 
 Author: Daniel Moody
 
@@ -88,6 +88,7 @@ class downloader_widget extends WP_Widget {
            <button class="upload_image_button button button-primary">Select or Upload File</button>
         </p>
         <?php
+        return "";
      }
           
     // Updating widget replacing old instances with new
@@ -102,6 +103,7 @@ class downloader_widget extends WP_Widget {
     public function scripts() {
         wp_enqueue_script( 'media-upload' );
         wp_enqueue_media();
+        // Change the path to the javascript if the zip is renamed
         wp_enqueue_script('our_admin', '/wp-content/plugins/downloader_widget/our_admin.js', array('jquery'));
     }
     // Class wpb_widget ends here 
